@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      background: hsl(30, 18%, 87%);
+      font-weight: 400;
+    }
+    .container {
+      max-width: 500px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .heading {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 24px;
+    }
+    .first {
+      font-family: "Outfit", sans-serif;
+      line-height: 1.5;
+    }
+    .heading1 {
+      font-family: "Outfit", sans-serif;
+      color: hsl(30, 10%, 34%);
+    }
+    .list1 {
+      font-family: "Outfit", sans-serif;
+      line-height: 1.85;
+    }
+    .prep {
+      color: hsl(30, 10%, 34%);
+      font-weight: bold;
+    }
+    .heading2, .heading3, .heading4 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 24px;
+      color: hsl(14, 45%, 36%);
+    }
+    .list2, .list1, .list3 {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+    .list2, .desc{
+      line-height: 1.95;
+      font-family: "Outfit", sans-serif;
+      list-style: square;
+    }
+    .child, .child1 {
+      margin-left: 20px;
+    }
+    .child1, .child2 {
+      color: hsl(332, 51%, 32%);
+      font-weight: bold;
+    }
+    .list3 {
+      font-family: "Outfit", sans-serif;
+      line-height: 1.5;
+      text-align: justify;
+    }
+    .list3 li {
+      margin-bottom: 8px;
+      padding-left: 20px;
+    }
+    .cals {
+      display: flex;
+      justify-content: space-between;
+      font-family: "Outfit", sans-serif;
+    }
+    .num-of-cal {
+      font-weight: bold;
+      color: hsl(14, 45%, 36%);
+    }
+    .heading1 {
+      margin-bottom: -12px;
+    }
+    .list1 li {
+      margin-bottom: 4px;
+      padding-left: 20px;
+    }
+    .prep-time {
+      background: hsl(30, 54%, 90%);
+      padding: 5px 10px;
+    }
+    hr {
+      background-color: lightgray;
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <img src="./assets/images/image-omelette.jpeg">
+    </div>
+    <h3 class="heading">
+      Simple Omelette Recipe
+    </h3>
+    <p class="first">
+      An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+      to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+    </p>
+
+    <div class="prep-time">
+      <h3 class="heading1">Preparation time</h3>
+
+      <ul class="list1">
+        <li><span class="prep">Total:</span> Approximately 10 minutes</li>
+        <li ><span class="prep">Preparation:</span> 5 minutes</li>
+        <li><span class="prep">Cooking:</span> 5 minutes</li>
+      </ul>
+    </div>
+
+    <h3 class="heading2">Ingredients</h3>
+
+    <ul class="list2">
+      <li><div class="child">2-3 large eggs</div></li>
+      <li><div class="child">Salt, to taste</div></li>
+      <li><div class="child">Pepper, to taste</div></li>
+      <li><div class="child">1 tablespoon of butter or oil</div></li>
+      <li><div class="child">Optional fillings: cheese, diced vegetables, cooked meats, herbs</div></li>
+    </ul>
+    <hr>
+    <h3 class="heading3">Instructions</h3>
+
+    <ol class="list3">
+      <li style="color: hsl(332, 51%, 32%);">
+        <span class="child2">Beat the eggs:</span>
+        In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+        You can add a tablespoon of water or milk for a fluffier texture.
+      </li>
+      <li style="color: hsl(332, 51%, 32%);">
+        <span class="child2">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.
+      </li>
+      <li style="color: hsl(332, 51%, 32%);">
+        <span class="child2">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+        the eggs evenly coat the surface.
+      </li>
+      <li style="color: hsl(332, 51%, 32%);">
+        <span class="child2">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the 
+        middle, sprinkle your chosen fillings over one half of the omelette.
+      </li>
+      <li style="color: hsl(332, 51%, 32%);">
+        <span class="child2">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the 
+        fillings. Let it cook for another minute, then slide it onto a plate.
+      </li>
+      <li style="color: hsl(332, 51%, 32%);">
+        <span class="child2">Enjoy:</span> Serve hot, with additional salt and pepper if needed.
+      </li>
+    </ol>
+    <hr>
+    
+    <h3 class="heading4">Nutrition</h3>
+
+    <p class="desc">
+      The table below shows nutritional values per serving without the additional fillings.
+    </p>
+
+    <div class="cals">
+      <p>Calories</p>
+      <p class="num-of-cal">277kcal</p>
+    </div>
+    <hr>
+    <div class="cals">
+      <p>Carbs</p>
+      <p class="num-of-cal">0g</p>
+    </div>
+    <hr>
+    <div class="cals">
+      <p>Protein</p>
+      <p class="num-of-cal">20g</p>
+    </div>
+    <hr>
+    <div class="cals">
+      <p>Fat</p>
+      <p class="num-of-cal">22g</p>
+    </div>
+  </div>
+</body>
+</html>
